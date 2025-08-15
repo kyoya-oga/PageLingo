@@ -1,0 +1,20 @@
+{
+  "name": "page-lingo",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node ./dist/app/main.js || echo 'Build first with make build.'",
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "lint": "biome lint .",
+    "fmt": "biome format --write .",
+    "check": "biome check ."
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.8.3",
+    "@types/node": "^20.11.0",
+    "typescript": "^5.5.0",
+    "vitest": "^2.0.0"
+  }
+}

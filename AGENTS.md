@@ -18,8 +18,12 @@ Tip: If the repository lacks a `Makefile`, add these targets to wrap your stackâ
 ## Coding Style & Naming Conventions
 - Indentation: 2 spaces; UTF-8; Unix line endings.
 - Names: files and dirs `kebab-case` or `snake_case`; classes `PascalCase`; functions/vars `camelCase` (JS/TS) or `snake_case` (Python).
-- Formatting: use an auto-formatter. JS/TS: Prettier; Python: Black. Commit only formatted code.
-- Linting: JS/TS: ESLint; Python: Ruff. Fix or justify warnings.
+- Formatting/Linting: use Biome (`biome.json` governs style). Run `npm run fmt` and `npm run lint` before committing.
+- Python (if present): use Black/Ruff. Fix or justify warnings.
+
+## Editor Setup (VS Code)
+- Install extension: `biomejs.biome` (auto-recommended).
+- Settings: `.vscode/settings.json` enables Biome as default formatter and format-on-save.
 
 ## Testing Guidelines
 - Framework: choose per language (e.g., Vitest/Jest for JS/TS, Pytest for Python).
